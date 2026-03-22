@@ -13,9 +13,8 @@ mkdir vjezba1 && cd vjezba1
 touch README.md
 
 5. Vratite se u početni radni direktorij
+cd ..
 
-Sve zajedno
-pwd && ls && mkdir vjezba1 && cd vjezba1 && touch README.md && cd ..
 
 
 Zadatak 2
@@ -35,8 +34,6 @@ rm file.txt && cd ..
 5. Pokušajte izbrisati direktorij vjezba2 . Zašto ne možete?
 Ne možemo ga izbrisati jer direktorij nije prazan.
 
-Sve zajedno
-mkdir vjezba2 && touch vjezba2/file.txt && cp vjezba2/file.txt vjezba2/file_copy.txt && ls vjezba2 && cd vjezba2 && rm file.txt && cd .. && rmdir vjezba2
 
 
 Zadatak 3
@@ -59,3 +56,20 @@ mkdir "$PWD/backup/$USER"
 6. Premjestite sve datoteke iz direktorija backup u direktorij nazvan varijablom USER
 mv notes.txt todo.txt script.sh "$USER"
 cd backup && mv notes.txt "$USER" && mv todo.txt "$USER" && mv script.sh "$USER"
+
+Zadatak 4
+
+1. Napravite novi direktorij vjezba4 i unutar njega direktorij subfolder
+mkdir vjezba4 && mkdir vjezba4/subfolder
+
+2. Unutar direktorija vjezba4 napravite datoteku nazvanu vrijednošću varijable HOSTNAME
+cd vjezba4 && touch $HOSTNAME
+
+3. Preimenujte novoizrađenu datoteku u vrijednost varijable USER
+mv $HOSTNAME $USER
+
+4. Premjestite datoteku nazvanu vrijednošću $USER u direktorij subfolder
+mv $USER subfolder
+
+5. Izbrišite datoteku nazvanu vrijednošću USER koristeći apsolutnu putanju 
+cd .. && rm vjezba4/subfolder/$USER
