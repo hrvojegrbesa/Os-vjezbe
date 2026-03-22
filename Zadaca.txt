@@ -16,3 +16,24 @@ touch README.md
 
 Sve zajedno
 pwd && ls && mkdir vjezba1 && cd vjezba1 && touch README.md && cd ..
+
+
+Zadatak 2
+
+1. Napravite praznu datoteku file.txt unutar direktorija vjezba2
+mkdir vjezba2 && cd vjezba2 && touch file.txt
+
+2. Kopirajte datoteku file.txt u direktorij vjezba2 i nazovite ju file_copy.txt
+cp file.txt file_copy.txt
+
+3. Ispišite sve datoteke unutar direktorija vjezba2
+ls
+
+4. Obrišite datoteku file.txt i vratite se u početni radni direktorij
+rm file.txt && cd ..
+
+5. Pokušajte izbrisati direktorij vjezba2 . Zašto ne možete?
+Ne možemo ga izbrisati jer direktorij nije prazan.
+
+Sve zajedno
+mkdir vjezba2 && touch vjezba2/file.txt && cp vjezba2/file.txt vjezba2/file_copy.txt && ls vjezba2 && cd vjezba2 && rm file.txt && cd .. && rmdir vjezba2
