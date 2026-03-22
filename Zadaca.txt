@@ -37,3 +37,25 @@ Ne možemo ga izbrisati jer direktorij nije prazan.
 
 Sve zajedno
 mkdir vjezba2 && touch vjezba2/file.txt && cp vjezba2/file.txt vjezba2/file_copy.txt && ls vjezba2 && cd vjezba2 && rm file.txt && cd .. && rmdir vjezba2
+
+
+Zadatak 3
+
+1. Napravite novi direktorij vjezba3 i unutar njega direktorij backup
+mkdir vjezba3 && mkdir vjezba3/backup && cd vjezba3
+
+2. Unutar direktorija vjezba3 napravite 3 datoteke: notes.txt , todo.txt i script.sh
+touch notes.txt todo.txt script.sh
+
+3. Kopirajte sve datoteke iz direktorija vjezba3 u direktorij backup
+cp notes.txt todo.txt script.sh backup
+
+4. Izbrišite samo datoteku script.sh iz direktorija vjezba3 i ispišite sve datoteke
+rm script.sh && ls
+
+5. U backup dodajte još jedan direktorij koji ćete imenovati vrijednošću varijable USER
+mkdir "$PWD/backup/$USER"
+
+6. Premjestite sve datoteke iz direktorija backup u direktorij nazvan varijablom USER
+mv notes.txt todo.txt script.sh "$USER"
+cd backup && mv notes.txt "$USER" && mv todo.txt "$USER" && mv script.sh "$USER"
