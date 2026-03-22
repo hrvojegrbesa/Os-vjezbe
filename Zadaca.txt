@@ -76,3 +76,40 @@ cd .. && rm vjezba4/subfolder/$USER
 
 
 Zadatak 5
+
+1. Unutar direktorija vjezba5 napravite datoteku naziva prema nasumičnom broju
+generiranom varijablom $RANDOM i s ekstenzijom .num
+mkdir vjezba5 && cd vjezba5 && touch $RANDOM.num
+
+2. Kako ćete provjeriti da je datoteka stvorena? Koju naredbu ćete koristiti?
+ls ili ls *.num
+
+3. Napravite kopiju datoteke nazvanu backup.num unutar direktorija vjezba5
+cp *.num backup.num
+
+4. Stvorite novi direktorij unutar roditeljskog direktorija vjezba5 i nazovite ga backup
+mkdir backup
+
+5. Premjestite datoteku backup.num u direktorij backup
+mv backup.num backup
+
+Zadatak 6
+
+1. Stvorite novi direktorij unutar Documents direktorija na vašem OS-u koristeći apsolutnu
+putanju i nazovite ga vjezba6
+mkdir /mnt/c/Users/Hrca/Documents/vjezba6
+
+2. Unutar direktorija, jednom naredbom touch stvorite 2 datoteke: OS_script.md i
+notes.txt i 1 direktorij scripts
+touch OS_script.md notes.txt && mkdir scripts
+
+3. Prebacite datoteku OS_script.md u direktorij scripts
+mv OS_script.md scripts
+
+4. Preimenujte datoteku notes.txt u todo.txt
+mv notes.txt todo.txt
+
+5. Prebacite se u direktorij scripts te koristeći relativnu putanju, obrišite datoteku
+todo.txt
+cd scripts && rm ../todo.txt
+
