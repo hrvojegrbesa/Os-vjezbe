@@ -1,0 +1,18 @@
+Zadatak 1
+
+1. Provjerite trenutni radni direktorij
+pwd
+
+2. Izlistajte sadržaj trenutnog radnog direktorija
+ls
+
+3. Napravite novi direktorij vjezba1 i prebacite se u njega
+mkdir vjezba1 && cd vjezba1
+
+4. Unutar direktorija vjezba1 napravite novu datoteku README.md
+touch README.md
+
+5. Vratite se u početni radni direktorij
+
+Sve zajedno
+pwd && ls && mkdir vjezba1 && cd vjezba1 && touch README.md && cd ..
