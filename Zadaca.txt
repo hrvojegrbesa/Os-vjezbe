@@ -73,3 +73,6 @@ mv $USER subfolder
 
 5. Izbrišite datoteku nazvanu vrijednošću USER koristeći apsolutnu putanju 
 cd .. && rm vjezba4/subfolder/$USER
+
+
+Zadatak 5
