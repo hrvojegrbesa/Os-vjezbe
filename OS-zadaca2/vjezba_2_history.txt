@@ -1,0 +1,59 @@
+$ history
+    1  pwd
+    2  ls
+    3  cd Desktop
+    4  ls
+    5  mkdir OS-zadaca2
+    6  git init
+    7  cd os-zadaca2
+    8  git init
+    9  ls
+   10  ls -a
+   11  -git status
+   12  -git clone https://github.com/hrvojegrbesa/Os-vjezbe.git
+   13  git clone https://github.com/hrvojegrbesa/Os-vjezbe.git
+   14  git pull
+   15  cd ..
+   16  cd os-zadaca2
+   17  git pull
+   18  pwd
+   19  ls -la
+   20  rm os-zadaca2
+   21  mkdir OS-zadaca2
+   22  cd ps-zadaca2
+   23  cd os-zadaca2
+   24  mkdir data
+   25  mkdir backup
+   26  ls
+   27  cd data
+   28  touch script.js
+   29  touch style.css
+   30  touch .env
+   31  echo 'console.log("Hello, World")' > script.js
+   32  cat script.js
+   33  echo "body { background-color: #f0f0f0; }"
+   34  echo "body { background-color: #f0f0f0; }" > style.css
+   35  cat style.css
+   36  echo "VJEZBE=OS" > .env
+   37  cat .env
+   38  cp -v OS-zadaca2/data/.?? OS-zadaca2/backup
+   39  cd ..
+   40  cp -v OS-zadaca2/data/.?? OS-zadaca2/backup
+   41  cp -v data/* backup/
+   42  cp -v data/.* backup/
+   43  ls
+   44  cd data
+   45  ls -laS ../backup
+   46  rm -iv script.js && rm -iv style.css
+   47  cp -vn ../backup/. ./
+   48  cp -vnR ../backup/. ./
+   49  ls -At1
+   50  ls -lA1t
+   51  tree
+   52  sudo apt install tree
+   53  cd /c/Users/Hrca/Desktop/Fipu
+   54  ls -aS
+   55  ls -laS
+   56  ls -lhS
+   57  ls -RA
+   58  history
